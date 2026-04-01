@@ -5,7 +5,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 count = 1
-titles = {}
+titles = []
 while count <= 50:
     response = requests.get(f"https://books.toscrape.com/catalogue/page-{count}.html", verify=False)
     response.encoding = "utf-8"
@@ -17,14 +17,15 @@ while count <= 50:
         price = book.find("div", class_="product_price").find("p", class_="price_color").text
         # in_stock = book.find("div", class_="product_price").find("p", class_="price_color")
 
-        titles[title] = {
+        titles.append({
+            "Title": title,
             "Price": str(price)
-        }
+        })
     count += 1
         
 
 with open("books.txt", "w", encoding="utf-8") as f:
     f.write(f"The total Number of Books on the site is {len(titles)}\n\n\n")
-    for title, values in titles.items():
-        f.write(f"{title}: {values['Price']}\n")   # \n is a new line
+    for title in titles:
+        f.write(f"{title["Title"]}: {title["Price"]}\n")
 

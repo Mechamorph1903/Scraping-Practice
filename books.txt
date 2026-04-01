@@ -1,4 +1,4 @@
-The total Number of Books on the site is 999
+The total Number of Books on the site is 1000
 
 
 A Light in the Attic: £51.77
@@ -237,7 +237,7 @@ The White Queen (The Cousins' War #1): £25.91
 The Wedding Pact (The O'Malleys #2): £32.61
 The Time Keeper: £27.88
 The Testament of Mary: £52.67
-The Star-Touched Queen: £32.30
+The Star-Touched Queen: £46.02
 The Songs of the Gods: £44.48
 The Song of Achilles: £37.40
 The Rosie Project (Don Tillman #1): £54.04
@@ -359,6 +359,7 @@ My Kitchen Year: 136 Recipes That Saved My Life: £11.53
 13 Hours: The Inside Account of What Really Happened In Benghazi: £27.06
 Will You Won't You Want Me?: £13.86
 Tipping Point for Planet Earth: How Close Are We to the Edge?: £37.55
+The Star-Touched Queen: £32.30
 The Silent Sister (Riley MacPherson #1): £46.29
 The Midnight Watch: A Novel of the Titanic and the Californian: £26.20
 The Lonely City: Adventures in the Art of Being Alone: £33.26
