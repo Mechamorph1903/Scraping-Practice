@@ -1,4 +1,7 @@
-The total Number of Books on the site is 1000
+The total Number of Books on the site is: 1000
+
+
+I will output books by title and Price
 
 
 A Light in the Attic: £51.77

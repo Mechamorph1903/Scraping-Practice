@@ -25,7 +25,8 @@ while count <= 50:
         
 
 with open("books.txt", "w", encoding="utf-8") as f:
-    f.write(f"The total Number of Books on the site is {len(titles)}\n\n\n")
-    for title in titles:
+    f.write(f"The total Number of Books on the site is: {len(titles)}\n\n\n")
+    f.write(f"I will output books by title and Price\n\n\n")
+    for title in titles: 
         f.write(f"{title["Title"]}: {title["Price"]}\n")
 
