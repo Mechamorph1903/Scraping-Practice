@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import os
 import requests
-
+import json
 load_dotenv()
 api_key = os.getenv("CLAUDE_KEY")
 
@@ -150,7 +150,12 @@ def getFormData(url):
 
 	if response.ok:
 		response_data = response.json()["content"][0]["text"]
-		print(response_data)
+		text = response_data.replace("```json", "").replace("```", "").strip()
+		job_data = json.loads(text)
+		print(job_data)
+		print(job_data["job_name"])
+		print(job_data["role_name"])
+		return job_data
 	
 	
 
