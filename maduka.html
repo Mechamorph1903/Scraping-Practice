@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="maduka.css">
+</head>
+<body>
+    <div id="maduka-overlay">
+        <div id="maduka-card">
+            <div id="maduka-screen1">
+                <h2>New Application</h2>
+                <p>What would you like to do?</p>
+                <div id="url-choice">
+                    <button class="choices" id="maduka-auto-btn">Auto Fill with URL</button>
+                    <button class="choices" id="maduka-manual-entry-btn">Manual Form Fill</button>
+                </div>
+            </div>
+            <div id="maduka-screen2">
+                <div id="screen2_main">
+                    <h2>Paste Link</h2>
+                    <div id="screen2_url">
+                        <h5>Paste the Application's Link into the textbox</h5>
+                        <input type="text" id="maduka-url-input" placeholder="https://...">
+                        <button type="button" id="maduka-fetch-btn" title="Fetch info from url provided.">Scrape</button>
+                    </div>
+                    <p id="warn"></p>
+                </div>
+                <div id="loading_screen">
+                    <div class="elements">
+                        <div class="elements_div">
+                            <p class="dot" id="dot1">💼</p>
+                            <p class="dot" id="dot2">💼</p>
+                            <p class="dot" id="dot3">💼</p>
+                            <p class="dot" id="heart">💔</p>
+                        </div>
+                        <p id="fetch-text">Fetching details<span>.</span><span>.</span><span>.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="maduka-screen3">
+                <h3>Oops!</h3>
+                <p>Couldn't get details from the link provided.</p>
+                <p id="maduka-error-reason"></p>
+                <div>
+                        <button class="choices" type="button" id="maduka-retry-btn">Try Another URL</button>
+                        <button class="choices" type="button" id="maduka-fallback-btn">Fill Manually</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="maduka.js"></script>
+</body>
+</html>

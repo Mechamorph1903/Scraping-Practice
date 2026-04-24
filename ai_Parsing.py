@@ -161,4 +161,6 @@ def getFormData(url):
 
 
 
-getFormData("https://job-boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004&gh_src=28109e334us&source=LinkedIn")
+# getFormData("https://job-boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004&gh_src=28109e334us&source=LinkedIn")
+# getFormData("https://job-boards.greenhouse.io/ispottv/jobs/4683077005?ref=Simplify")
+getFormData("https://www.loveandlemons.com/homemade-pasta-recipe/")
